@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Arviel Studio - Game & App Development Studio dan Content Creator Agency. Kami mengembangkan game, aplikasi, dan membantu content creator berkembang."
+    />
+    <meta
+      name="keywords"
+      content="game development, app development, content creator, agency, arviel studio"
+    />
+    <meta name="author" content="Arviel Studio" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Arviel Studio - Game & App Development"
+    />
+    <meta
+      property="og:description"
+      content="Studio pengembangan game dan aplikasi profesional dengan layanan content creator agency"
+    />
+    <meta property="og:type" content="website" />
+
+    <title>
+      Arviel Studio - Game & App Development | Content Creator Agency
+    </title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo">
+            <span class="logo-icon">🎮</span>
+            <span class="logo-text">Arviel Studio</span>
+          </div>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#creators" class="nav-link">Creators</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <button class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="badge float">
+              <span class="badge-dot"></span>
+              Available for Projects
+            </div>
+            <h1 class="hero-title fade-in-up">
+              Wujudkan Ide Digital Anda Bersama
+              <span class="text-gradient">Arviel Studio</span>
+            </h1>
+            <p class="hero-description fade-in-up">
+              Kami adalah studio kreatif yang mengkhususkan diri dalam
+              pengembangan game, aplikasi mobile & web, serta manajemen content
+              creator. Dari konsep hingga peluncuran, kami siap mewujudkan visi
+              digital Anda.
+            </p>
+            <div class="hero-buttons fade-in-up">
+              <a href="#contact" class="btn btn-primary">Mulai Proyek</a>
+              <a href="#portfolio" class="btn btn-secondary">Lihat Portfolio</a>
+            </div>
+            <div class="hero-stats fade-in-up">
+              <div class="stat-item">
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-target="30">0</div>
+                <div class="stat-label">Happy Clients</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-target="15">0</div>
+                <div class="stat-label">Content Creators</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual float">
+            <div class="hero-image-wrapper">
+              <div class="hero-glow"></div>
+              <div class="hero-icon">🚀</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Layanan Kami</h2>
+          <p class="section-subtitle">
+            Solusi lengkap untuk kebutuhan digital Anda, dari pengembangan game
+            hingga manajemen content creator
+          </p>
+        </div>
+        <div class="services-grid" id="servicesGrid">
+          <!-- Services will be loaded dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container-wide">
+        <div class="section-title">
+          <h2>Portfolio Kami</h2>
+          <p class="section-subtitle">
+            Lihat beberapa proyek yang telah kami kerjakan dengan penuh dedikasi
+            dan kreativitas
+          </p>
+        </div>
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="games">Games</button>
+          <button class="filter-btn" data-filter="apps">Apps</button>
+        </div>
+        <div class="portfolio-grid" id="portfolioGrid">
+          <!-- Portfolio items will be loaded dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Creators Section -->
+    <section id="creators" class="creators">
+      <div class="container">
+        <div class="section-title">
+          <h2>Content Creators Kami</h2>
+          <p class="section-subtitle">
+            Bergabunglah dengan content creator berbakat yang telah mempercayai
+            kami untuk mengembangkan karir mereka
+          </p>
+        </div>
+        <div class="creators-grid" id="creatorsGrid">
+          <!-- Creators will be loaded dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Tentang Arviel Studio</h2>
+            <p>
+              Arviel Studio didirikan dengan visi untuk menjadi partner
+              terpercaya dalam transformasi digital. Kami menggabungkan keahlian
+              teknis, kreativitas, dan pemahaman mendalam tentang industri untuk
+              menghasilkan produk digital yang tidak hanya fungsional, tetapi
+              juga menginspirasi.
+            </p>
+            <p>
+              Tim kami terdiri dari developer berpengalaman, designer kreatif,
+              dan strategist digital yang passionate dalam menciptakan solusi
+              inovatif. Dari game mobile yang engaging hingga aplikasi
+              enterprise yang robust, kami siap menghadapi tantangan apapun.
+            </p>
+            <div class="about-features">
+              <div class="feature-item">
+                <div class="feature-icon">✨</div>
+                <div class="feature-text">
+                  <h4>Kreativitas Tanpa Batas</h4>
+                  <p>Ide-ide fresh dan inovatif untuk setiap proyek</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">🎯</div>
+                <div class="feature-text">
+                  <h4>Fokus pada Kualitas</h4>
+                  <p>Standar tinggi dalam setiap aspek development</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">🤝</div>
+                <div class="feature-text">
+                  <h4>Partnership Jangka Panjang</h4>
+                  <p>Kami tidak hanya vendor, tapi partner bisnis Anda</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual">
+            <div class="about-image-grid">
+              <div class="about-img-item">💻</div>
+              <div class="about-img-item">🎮</div>
+              <div class="about-img-item">📱</div>
+              <div class="about-img-item">🎬</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Hubungi Kami</h2>
+          <p class="section-subtitle">
+            Punya proyek atau ide? Mari diskusikan bagaimana kami bisa membantu
+            mewujudkannya
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Mari Berkolaborasi</h3>
+            <p>
+              Kami selalu terbuka untuk proyek baru dan kolaborasi menarik.
+              Hubungi kami dan mari ciptakan sesuatu yang luar biasa bersama!
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:hello@arvielstudio.com"
+                    >hello@arvielstudio.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📱</div>
+                <div>
+                  <h4>Phone</h4>
+                  <a href="tel:+6281234567890">+62 812-3456-7890</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <h4>Location</h4>
+                  <p>Jakarta, Indonesia</p>
+                </div>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link" title="Instagram">📷</a>
+              <a href="#" class="social-link" title="Twitter">🐦</a>
+              <a href="#" class="social-link" title="LinkedIn">💼</a>
+              <a href="#" class="social-link" title="YouTube">📺</a>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nama Lengkap</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="service">Layanan yang Diminati</label>
+              <select id="service" name="service" required>
+                <option value="">Pilih Layanan</option>
+                <option value="game">Game Development</option>
+                <option value="app">App Development</option>
+                <option value="agency">Content Creator Agency</option>
+                <option value="other">Lainnya</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Kirim Pesan
+            </button>
+            <div class="form-message" id="formMessage"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="logo">
+              <span class="logo-icon">🎮</span>
+              <span class="logo-text">Arviel Studio</span>
+            </div>
+            <p>
+              Transforming ideas into digital reality. Your trusted partner in
+              game development, app creation, and content creator management.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#creators">Creators</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Game Development</a></li>
+              <li><a href="#services">App Development</a></li>
+              <li><a href="#services">Content Creator Agency</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <div class="social-links">
+              <a href="#" class="social-link">📷</a>
+              <a href="#" class="social-link">🐦</a>
+              <a href="#" class="social-link">💼</a>
+              <a href="#" class="social-link">📺</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Arviel Studio. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+{
+  "creators": [
+    {
+      "id": 1,
+      "name": "Alex Gaming",
+      "description": "Gaming content creator dengan fokus pada game reviews dan walkthroughs. Spesialisasi di RPG dan strategy games.",
+      "image": "alex-gaming.jpg",
+      "platform": "YouTube",
+      "followers": 250000,
+      "category": "gaming",
+      "verified": true,
+      "socialLinks": {
+        "youtube": "https://youtube.com/@alexgaming",
+        "instagram": "https://instagram.com/alexgaming",
+        "tiktok": "https://tiktok.com/@alexgaming"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Sarah Tech",
+      "description": "Tech reviewer dan educator. Membuat konten tentang gadget reviews, coding tutorials, dan tech news.",
+      "image": "sarah-tech.jpg",
+      "platform": "YouTube",
+      "followers": 180000,
+      "category": "tech",
+      "verified": true,
+      "socialLinks": {
+        "youtube": "https://youtube.com/@sarahtech",
+        "instagram": "https://instagram.com/sarahtech",
+        "twitter": "https://twitter.com/sarahtech"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Creative Vlog",
+      "description": "Lifestyle dan creative vlogger. Konten seputar daily life, photography, dan creative projects.",
+      "image": "creative-vlog.jpg",
+      "platform": "Instagram",
+      "followers": 320000,
+      "category": "lifestyle",
+      "verified": true,
+      "socialLinks": {
+        "instagram": "https://instagram.com/creativevlog",
+        "tiktok": "https://tiktok.com/@creativevlog",
+        "youtube": "https://youtube.com/@creativevlog"
+      }
+    },
+    {
+      "id": 4,
+      "name": "DevMaster",
+      "description": "Programming educator dan software developer. Tutorial coding, tips & tricks, dan career advice untuk developers.",
+      "image": "devmaster.jpg",
+      "platform": "YouTube",
+      "followers": 420000,
+      "category": "tech",
+      "verified": true,
+      "socialLinks": {
+        "youtube": "https://youtube.com/@devmaster",
+        "twitter": "https://twitter.com/devmaster",
+        "github": "https://github.com/devmaster"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Esports Pro",
+      "description": "Professional esports player dan streamer. Live streaming game tournaments dan tips untuk competitive gaming.",
+      "image": "esports-pro.jpg",
+      "platform": "Twitch",
+      "followers": 150000,
+      "category": "gaming",
+      "verified": true,
+      "socialLinks": {
+        "twitch": "https://twitch.tv/esportspro",
+        "youtube": "https://youtube.com/@esportspro",
+        "twitter": "https://twitter.com/esportspro"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Art & Design",
+      "description": "Digital artist dan designer. Konten tentang digital art tutorials, design tips, dan creative process.",
+      "image": "art-design.jpg",
+      "platform": "Instagram",
+      "followers": 280000,
+      "category": "creative",
+      "verified": true,
+      "socialLinks": {
+        "instagram": "https://instagram.com/artanddesign",
+        "behance": "https://behance.net/artanddesign",
+        "youtube": "https://youtube.com/@artanddesign"
+      }
+    }
+  ]
+}

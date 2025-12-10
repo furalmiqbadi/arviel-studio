@@ -1,0 +1,49 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Game Development",
+      "description": "Kami mengembangkan game mobile dan PC dengan gameplay yang menarik dan grafis berkualitas tinggi. Dari konsep hingga peluncuran, kami siap mewujudkan ide game Anda.",
+      "icon": "🎮",
+      "category": "games",
+      "features": [
+        "Mobile Game Development (iOS & Android)",
+        "PC Game Development",
+        "Game Design & Prototyping",
+        "Unity & Unreal Engine",
+        "Multiplayer Integration",
+        "Monetization Strategy"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Application Development",
+      "description": "Solusi aplikasi custom untuk kebutuhan bisnis Anda. Kami membuat aplikasi mobile dan web yang user-friendly, scalable, dan sesuai dengan kebutuhan spesifik Anda.",
+      "icon": "📱",
+      "category": "apps",
+      "features": [
+        "Mobile App Development",
+        "Web Application Development",
+        "UI/UX Design",
+        "API Integration",
+        "Cloud Deployment",
+        "Maintenance & Support"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Content Creator Agency",
+      "description": "Kami membantu content creator mengembangkan brand mereka, mengelola konten, dan meningkatkan engagement. Dari strategi konten hingga kolaborasi brand.",
+      "icon": "🎬",
+      "category": "agency",
+      "features": [
+        "Brand Development",
+        "Content Strategy",
+        "Social Media Management",
+        "Brand Partnerships",
+        "Analytics & Growth",
+        "Creative Production"
+      ]
+    }
+  ]
+}
