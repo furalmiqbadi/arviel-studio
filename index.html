@@ -39,6 +39,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/contact-simple.css" />
   </head>
   <body>
     <!-- Navigation -->
@@ -46,8 +47,7 @@
       <div class="container">
         <div class="nav-content">
           <div class="logo">
-            <span class="logo-icon">🎮</span>
-            <span class="logo-text">Arviel Studio</span>
+            <img src="assets/logo.png" alt="Arviel Studio Logo">
           </div>
           <ul class="nav-menu" id="navMenu">
             <li><a href="#home" class="nav-link active">Home</a></li>
@@ -108,7 +108,7 @@
           <div class="hero-visual float">
             <div class="hero-image-wrapper">
               <div class="hero-glow"></div>
-              <div class="hero-icon">🚀</div>
+              <img src="assets/logo.png" alt="Arviel Studio" class="hero-logo">
             </div>
           </div>
         </div>
@@ -233,78 +233,51 @@
             mewujudkannya
           </p>
         </div>
-        <div class="contact-content">
-          <div class="contact-info">
-            <h3>Mari Berkolaborasi</h3>
-            <p>
-              Kami selalu terbuka untuk proyek baru dan kolaborasi menarik.
-              Hubungi kami dan mari ciptakan sesuatu yang luar biasa bersama!
-            </p>
-            <div class="contact-details">
-              <div class="contact-item">
-                <div class="contact-icon">📧</div>
-                <div>
-                  <h4>Email</h4>
-                  <a href="mailto:hello@arvielstudio.com"
-                    >hello@arvielstudio.com</a
-                  >
-                </div>
-              </div>
-              <div class="contact-item">
-                <div class="contact-icon">📱</div>
-                <div>
-                  <h4>Phone</h4>
-                  <a href="tel:+6281234567890">+62 812-3456-7890</a>
-                </div>
-              </div>
-              <div class="contact-item">
-                <div class="contact-icon">📍</div>
-                <div>
-                  <h4>Location</h4>
-                  <p>Jakarta, Indonesia</p>
-                </div>
-              </div>
-            </div>
-            <div class="social-links">
-              <a href="#" class="social-link" title="Instagram">📷</a>
-              <a href="#" class="social-link" title="Twitter">🐦</a>
-              <a href="#" class="social-link" title="LinkedIn">💼</a>
-              <a href="#" class="social-link" title="YouTube">📺</a>
-            </div>
+        <div class="contact-simple">
+          <div class="contact-card">
+            <div class="contact-icon-large">📧</div>
+            <h3>Email</h3>
+            <a href="mailto:hello@arvielstudio.com" class="contact-link">hello@arvielstudio.com</a>
           </div>
-          <form class="contact-form" id="contactForm">
-            <div class="form-group">
-              <label for="name">Nama Lengkap</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-group">
-              <label for="service">Layanan yang Diminati</label>
-              <select id="service" name="service" required>
-                <option value="">Pilih Layanan</option>
-                <option value="game">Game Development</option>
-                <option value="app">App Development</option>
-                <option value="agency">Content Creator Agency</option>
-                <option value="other">Lainnya</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Pesan</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">
-              Kirim Pesan
-            </button>
-            <div class="form-message" id="formMessage"></div>
-          </form>
+          <div class="contact-card">
+            <div class="contact-icon-large">📱</div>
+            <h3>Phone</h3>
+            <a href="tel:+6281234567890" class="contact-link">+62 812-3456-7890</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon-large">📍</div>
+            <h3>Location</h3>
+            <p class="contact-link">Jakarta, Indonesia</p>
+          </div>
+        </div>
+        <div class="social-section">
+          <h3>Follow Us</h3>
+          <div class="social-links-large">
+            <a href="#" class="social-link-large" title="Instagram">
+              <span class="social-icon">📷</span>
+              <span class="social-name">Instagram</span>
+            </a>
+            <a href="#" class="social-link-large" title="Twitter">
+              <span class="social-icon">🐦</span>
+              <span class="social-name">Twitter</span>
+            </a>
+            <a href="#" class="social-link-large" title="LinkedIn">
+              <span class="social-icon">💼</span>
+              <span class="social-name">LinkedIn</span>
+            </a>
+            <a href="#" class="social-link-large" title="YouTube">
+              <span class="social-icon">📺</span>
+              <span class="social-name">YouTube</span>
+            </a>
+            <a href="#" class="social-link-large" title="TikTok">
+              <span class="social-icon">🎵</span>
+              <span class="social-name">TikTok</span>
+            </a>
+            <a href="#" class="social-link-large" title="Discord">
+              <span class="social-icon">💬</span>
+              <span class="social-name">Discord</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -315,8 +288,7 @@
         <div class="footer-content">
           <div class="footer-section">
             <div class="logo">
-              <span class="logo-icon">🎮</span>
-              <span class="logo-text">Arviel Studio</span>
+              <img src="assets/logo.png" alt="Arviel Studio Logo">
             </div>
             <p>
               Transforming ideas into digital reality. Your trusted partner in

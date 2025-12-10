@@ -1,0 +1,209 @@
+/* ===== SIMPLIFIED CONTACT SECTION ===== */
+.contact-simple {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.contact-card {
+  background: var(--glass-bg);
+  border: 2px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  text-align: center;
+  transition: all var(--transition-base);
+  backdrop-filter: blur(10px);
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--color-primary);
+}
+
+.contact-icon-large {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-card h3 {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-primary);
+  font-size: 1.5rem;
+}
+
+.contact-link {
+  color: var(--color-primary);
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition-fast);
+  display: inline-block;
+}
+
+.contact-link:hover {
+  color: var(--color-primary-light);
+  transform: scale(1.05);
+}
+
+.social-section {
+  text-align: center;
+  padding: var(--spacing-2xl) 0;
+}
+
+.social-section h3 {
+  margin-bottom: var(--spacing-xl);
+  font-size: 2rem;
+}
+
+.social-links-large {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.social-link-large {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-lg);
+  background: var(--glass-bg);
+  border: 2px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  min-width: 120px;
+  transition: all var(--transition-base);
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+}
+
+.social-link-large:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.1) 0%, rgba(0, 212, 170, 0.1) 100%);
+}
+
+.social-icon {
+  font-size: 3rem;
+}
+
+.social-name {
+  color: var(--color-text-primary);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Portfolio Detail Enhancements */
+.portfolio-detail {
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--glass-border);
+}
+
+.portfolio-meta {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-md);
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.meta-icon {
+  font-size: 1.25rem;
+}
+
+.portfolio-features {
+  list-style: none;
+  margin-top: var(--spacing-md);
+}
+
+.portfolio-features li {
+  padding: 0.5rem 0;
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.portfolio-features li::before {
+  content: '✓';
+  color: var(--color-accent);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.portfolio-stats {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--glass-border);
+}
+
+.stat-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 212, 170, 0.1);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.genre-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgba(255, 107, 53, 0.1);
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  color: var(--color-secondary);
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+/* Logo Styles */
+.logo img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.hero-logo {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 30px rgba(0, 102, 204, 0.3));
+}
+
+@media (max-width: 768px) {
+  .contact-simple {
+    grid-template-columns: 1fr;
+  }
+  
+  .social-links-large {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .social-link-large {
+    min-width: 100px;
+  }
+  
+  .logo img {
+    height: 32px;
+  }
+}

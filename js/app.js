@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initNavbar();
   loadData();
   initScrollAnimations();
-  initContactForm();
   initPortfolioFilters();
 });
 
@@ -144,8 +143,39 @@ function renderPortfolio(portfolio, filter = "all") {
       </div>
       <div class="portfolio-content">
         <span class="portfolio-category">${item.category}</span>
+        ${item.genre ? `<span class="genre-badge">${item.genre}</span>` : ''}
         <h3>${item.title}</h3>
         <p>${item.description}</p>
+        
+        ${item.platform ? `
+        <div class="portfolio-meta">
+          <div class="meta-item">
+            <span class="meta-icon">💻</span>
+            <span>${item.platform}</span>
+          </div>
+          ${item.downloads ? `
+          <div class="meta-item">
+            <span class="meta-icon">⬇️</span>
+            <span>${item.downloads} downloads</span>
+          </div>
+          ` : ''}
+          ${item.rating ? `
+          <div class="meta-item">
+            <span class="meta-icon">⭐</span>
+            <span>${item.rating}/5.0</span>
+          </div>
+          ` : ''}
+        </div>
+        ` : ''}
+        
+        ${item.features && item.features.length > 0 ? `
+        <div class="portfolio-detail">
+          <ul class="portfolio-features">
+            ${item.features.slice(0, 3).map(feature => `<li>${feature}</li>`).join('')}
+          </ul>
+        </div>
+        ` : ''}
+        
         <div class="portfolio-tech">
           ${item.technologies
             .map((tech) => `<span class="tech-tag">${tech}</span>`)
